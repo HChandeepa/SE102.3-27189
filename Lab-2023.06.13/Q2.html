@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<button onclick="">Click This</button>
+
+<body>
+    <!--Write a  program to get 5 marks from the user and calculate the total and average
+        of those marks and display the output. When a user clicks on the grade button the
+         following should execute If the average is greater than 30 display an alert "Congrats! You passed and if the average is below 30 display an alert
+"Better luck next time-->
+    <script>
+        window.onload = function () {
+            showPrompt();
+        }
+        function showPrompt() {
+            var sum = 0;
+            for (var i = 1; i <= 5; i++) {
+                var mark = window.prompt("Enter marks:");
+                sum = sum + parseInt(mark);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
