@@ -1,0 +1,23 @@
+<html>
+<title>hello</title>
+
+<body>
+    <!--When a button on the web page called 'Google' is clicked, a confirm box should pop up if 'ok' is selected, it should redirect to the google page and if 'cancel is selected,
+            a message should display "You decided to stay"-->
+    <button onclick="x()">Google</button>
+
+    <script>
+        function x() {
+            var input = window.confirm("Are sure you want to visit Google?");
+            if (input) {
+                window.location.href = "https://www.google.com/";
+            }
+            else {
+                window.alert("You decided to stay");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
